@@ -7,11 +7,15 @@ public class TesteContaComCliente {
 		cliente.setCpf("222-222-222-22");
 		cliente.setProfissao("desenvolvedor Backend Java");
 		
-		Conta conta = new Conta();
+		Conta conta = new Conta(123, 1010);
+		Conta conta2 = new Conta(123, 1011);
+
 		conta.setTitular(cliente);
 		
 		System.out.println(conta.getTitular().getNome());
 		System.out.println(conta.getTitular());
+		
+		System.out.println(Conta.getTotal());
 
 	}
 
