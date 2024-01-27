@@ -1,6 +1,6 @@
 package heranca;
 
-public class testeFuncionario {
+public class TesteFuncionario {
 
 	public static void main(String[] args) {
 		Funcionario f = new Funcionario();
