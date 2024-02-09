@@ -8,6 +8,8 @@ public class TesteHeranca {
 
 		ContaPoupanca cp = new ContaPoupanca(222, 222);
 		cp.deposita(200.0);
+		
+		cp.saldo = 99.9;
 
 		cc.transfere(10.0, cp);
 		System.out.println("CC: " + cc.getSaldo());
