@@ -9,6 +9,16 @@ public abstract class Conta {
 	private static int totalContasCriadas;
 
 	public Conta(int agencia, int numero) {
+		
+		if(agencia < 1) {
+            throw new IllegalArgumentException("Agencia inválida");
+        }
+
+        if(numero < 1) {
+            throw new IllegalArgumentException("Numero da conta inválido");
+        }
+
+		
 		Conta.totalContasCriadas++;
 		System.out.println("Total de contas criadas: " + Conta.totalContasCriadas);
 		this.agencia = agencia;
