@@ -1,4 +1,4 @@
-package herdadoConta;
+package herdadoConta.br.com.bytebank.banco.modelo;
 
 public interface Tributavel {
 	

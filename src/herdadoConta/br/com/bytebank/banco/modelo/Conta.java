@@ -1,8 +1,8 @@
-package herdadoConta;
+package herdadoConta.br.com.bytebank.banco.modelo;
 
 public abstract class Conta {
 
-	protected double saldo;
+	public double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
